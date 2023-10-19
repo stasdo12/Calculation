@@ -2,6 +2,7 @@ package ua.com.calculation;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView resultTextView;
     private EditText number_field_one, number_field_two;
     private Button add_button;
+    private Button move_button;
 
 
 
@@ -26,7 +28,16 @@ public class MainActivity extends AppCompatActivity {
         number_field_one = findViewById(R.id.number_field_one);
         number_field_two = findViewById(R.id.number_field_two);
         add_button = findViewById(R.id.add_button);
+        move_button = findViewById(R.id.button_to_move_toast);
 
+        move_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,
+                        ToastAndAlertDialogActivity.class);
+                startActivity(intent);
+            }
+        });
 
         add_button.setOnClickListener(new View.OnClickListener() {
             @Override

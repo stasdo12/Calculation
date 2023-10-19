@@ -4,4 +4,10 @@
     <string name="number1">Number1</string>
     <string name="number2">Number2</string>
     <string name="calc">Calculation</string>
+    <string name="toast">Toast and Dialog</string>
+    <string name="logo">Simple Text</string>
+    <string name="toast_btn">Toast</string>
+    <string name="alert">Alert</string>
+    <string name="dialog">Dialog</string>
+
 </resources>
