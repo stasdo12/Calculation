@@ -14,10 +14,6 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView resultTextView;
     private EditText number_field_one, number_field_two;
-    private Button add_button;
-    private Button move_button;
-
-
 
 
     @Override
@@ -27,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
         resultTextView = findViewById(R.id.resultTextView);
         number_field_one = findViewById(R.id.number_field_one);
         number_field_two = findViewById(R.id.number_field_two);
-        add_button = findViewById(R.id.add_button);
-        move_button = findViewById(R.id.button_to_move_toast);
+        Button add_button = findViewById(R.id.add_button);
+        Button move_button = findViewById(R.id.button_to_move_toast);
 
         move_button.setOnClickListener(new View.OnClickListener() {
             @Override

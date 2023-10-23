@@ -16,23 +16,26 @@ import android.widget.Toast;
 
 public class ToastAndAlertDialogActivity extends AppCompatActivity {
 
-    private Button button;
-
-    private Button button_alert;
-    private TextView mainText;
-
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_toast_and_alert_dialog);
 
-        button = findViewById(R.id.button_to_calc);
-        button_alert = findViewById(R.id.button_alert);
-        mainText = findViewById(R.id.simpleText);
+        Button button = findViewById(R.id.button_to_calc);
+        Button button_to_image = findViewById(R.id.move_to_image);
+        Button button_alert = findViewById(R.id.button_alert);
+        TextView mainText = findViewById(R.id.simpleText);
+
+
+
+        button_to_image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ToastAndAlertDialogActivity.this, ImageActivity.class);
+                startActivity(intent);
+            }
+        });
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override

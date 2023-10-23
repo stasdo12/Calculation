@@ -9,5 +9,7 @@
     <string name="toast_btn">Toast</string>
     <string name="alert">Alert</string>
     <string name="dialog">Dialog</string>
+    <string name="image">Image</string>
+    <string name="sorry">Sorry</string>
 
 </resources>
