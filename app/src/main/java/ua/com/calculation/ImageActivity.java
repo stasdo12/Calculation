@@ -36,7 +36,7 @@ public class ImageActivity extends AppCompatActivity {
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ImageActivity.this, ImageActivity.class);
+                Intent intent = new Intent(ImageActivity.this, MediaPlayerActivity.class);
                 startActivity(intent);
             }
         });
