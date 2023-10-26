@@ -25,6 +25,16 @@ public class MainActivity extends AppCompatActivity {
         number_field_two = findViewById(R.id.number_field_two);
         Button add_button = findViewById(R.id.add_button);
         Button move_button = findViewById(R.id.button_to_move_toast);
+        Button fragment_button = findViewById(R.id.move_to_fragment);
+
+
+        fragment_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, FragmentActivity.class);
+                startActivity(intent);
+            }
+        });
 
         move_button.setOnClickListener(new View.OnClickListener() {
             @Override
