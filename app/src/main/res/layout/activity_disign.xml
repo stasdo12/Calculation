@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".DesignActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/upper_bg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#46BEE6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello Admin"
+            android:textColor="@color/white"
+            android:fontFamily="serif-monospace"
+            android:textSize="20sp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Account"
+            android:textColor="@color/bg"
+            android:fontFamily="serif-monospace"
+            android:textSize="16sp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="80dp"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/second_bg"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/upper_bg"
+        android:background="@color/white"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="-80dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="55dp"
+            android:backgroundTint="#46BEE6"
+            android:text="Account">
+
+        </Button>
+    </RelativeLayout>
+    
+    <ImageView
+        android:id="@+id/main_image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/second_bg"
+        android:src="@drawable/police_car"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginHorizontal="20dp">
+    </ImageView>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#21B9EC">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="3dp"
+            android:text="Main"
+            android:backgroundTint="#072939">
+        </Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="3dp"
+            android:text="Contact"
+            android:backgroundTint="#072939">
+        </Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="3dp"
+            android:text="Blog"
+            android:backgroundTint="#072939">
+        </Button>
+
+
+    </LinearLayout>
+    
+
+</RelativeLayout>
