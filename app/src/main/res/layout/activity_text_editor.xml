@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".DesignActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/upper_bg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#46BEE6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello Admin"
+            android:textColor="@color/white"
+            android:fontFamily="serif-monospace"
+            android:textSize="20sp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Account"
+            android:textColor="@color/bg"
+            android:fontFamily="serif-monospace"
+            android:textSize="16sp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="80dp"
+
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/second_bg"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/upper_bg"
+        android:background="@color/white"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="-80dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="55dp"
+            android:backgroundTint="#46BEE6"
+            android:text="Account">
+
+        </Button>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/user_name_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/second_bg"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/user_bio_field"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/user_name_field"
+        android:layout_marginHorizontal="50dp"
+        android:ems="10"
+        android:hint="About you!"
+        android:layout_marginTop="20dp"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp" />
+
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_bio_field"
+        android:layout_marginStart="50sp"
+        android:layout_marginTop="42dp"
+        android:backgroundTint="#072939"
+        android:minHeight="55dp"
+        android:onClick="saveData"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/load_button"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_bio_field"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="42dp"
+        android:layout_toEndOf="@+id/save_button"
+        android:backgroundTint="#072939"
+        android:minHeight="55dp"
+        android:onClick="getData"
+        android:text="Load" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#21B9EC">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="3dp"
+            android:backgroundTint="#072939"
+            android:minHeight="55dp"
+            android:text="Main" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="3dp"
+            android:backgroundTint="#072939"
+            android:minHeight="55dp"
+            android:text="Contact" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="3dp"
+            android:backgroundTint="#072939"
+            android:minHeight="55dp"
+            android:text="Blog" />
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

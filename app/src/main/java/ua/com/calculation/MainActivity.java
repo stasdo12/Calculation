@@ -26,6 +26,16 @@ public class MainActivity extends AppCompatActivity {
         Button add_button = findViewById(R.id.add_button);
         Button move_button = findViewById(R.id.button_to_move_toast);
         Button fragment_button = findViewById(R.id.move_to_fragment);
+        Button move_to_text_editor = findViewById(R.id.move_to_editor);
+
+
+        move_to_text_editor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TextEditorActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
         fragment_button.setOnClickListener(new View.OnClickListener() {
