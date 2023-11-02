@@ -21,6 +21,8 @@ public class TextEditorActivity extends AppCompatActivity {
 
     private EditText user_name_field, user_bio_field;
 
+    private Button moveToWeb;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,8 +30,20 @@ public class TextEditorActivity extends AppCompatActivity {
         setContentView(R.layout.activity_text_editor);
         user_name_field = findViewById(R.id.user_name_field);
         user_bio_field = findViewById(R.id.user_bio_field);
+        moveToWeb = findViewById(R.id.web_button);
+
+
+        moveToWeb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TextEditorActivity.this, WebActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
+
+
 
 
 
@@ -83,4 +97,6 @@ public class TextEditorActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ListViewActivity.class);
         startActivity(intent);
     }
+
+
 }
